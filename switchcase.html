@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+
+<body>
+    <script>
+        let dataDeHoje = new Date().getDay();
+
+        if (dataDeHoje == 0) {
+            document.write("hoje é domingo.");
+        } else if (dataDeHoje == 1) {
+            document.write("hoje é segunda-feira.");
+        } else if (dataDeHoje == 2) {
+            document.write("hoje é terça-feira.");
+        } else if (dataDeHoje == 3) {
+            document.write("hoje é quarta-feira.");
+        } else if (dataDeHoje == 4) {
+            document.write("hoje é quinta-feira.");
+        } else if (dataDeHoje == 5) {
+            document.write("hoje é sexta-feira.");
+        } else if (dataDeHoje == 6) {
+            document.write("hojé é sabado.");
+        } else {
+            document.write("hoje não é um dia de semana");
+        }
+
+
+        switch (dataDeHoje) {
+            case 0:
+                document.write("hoje é domingo.");
+                break;
+            case 1:
+                document.write("hoje é segunda-feira.");
+                break;
+            case 2:
+                document.write("hoje é terça-feira.");
+                break;
+            case 3:
+                document.write("hoje é quarta-feira.");
+                break;
+            case 4:
+                document.write("hoje é quinta-feira.");
+                break;
+            case 5:
+                document.write("hoje é sexta-feira.");
+                break;
+            case 6:
+                document.write("hoje é sabado.");
+                break;
+                
+            }
+            document.write(dataDeHoje)
+
+                let diaDaSemana = (dataDeHoje == 0) ? "domingo" :
+                                  (dataDeHoje == 1) ? "segunda-feira" :
+                                  (dataDeHoje == 2) ? "terça-feira" :
+                                  (dataDeHoje == 3) ? "quarta-feira" :
+                                  (dataDeHoje == 4) ? "quinta-feira" :
+                                  (dataDeHoje == 5) ? "sexta-feira" :
+                                  (dataDeHoje == 1) ? "sabado" :
+                       "Dia da semana invélido.";
+         document.write("hoje é " + diaDaSemana + ".");
+    
+        </script>
+    </body>
+    
+    </html>
